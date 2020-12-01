@@ -19,5 +19,5 @@ Jika Anda mengalami kebuntuan, coba solusi Anda dengan contoh yang diberikan dal
 * **Saya merasa teks di situs itu sulit dibaca. Apakah ada mode kontras tinggi?** Ada lembar gaya alternatif kontras tinggi. Firefox mendukung ini secara default (View -> Page Style -> High Contrast).
 * **Saya punya ide teka-teki! Bolehkah saya mengirimkannya kepada Anda?** Tolong jangan. Karena masalah hukum seperti hak cipta dan atribusi, saya tidak menerima ide teka-teki, dan saya bahkan tidak akan membaca email Anda jika terlihat seperti email untuk berjaga-jaga jika saya menggunakan sebagian secara tidak sengaja.
 
-## Website Resmi
+## :newspaper: Website Resmi
 [Advent of Code 2020](https://adventofcode.com/)
