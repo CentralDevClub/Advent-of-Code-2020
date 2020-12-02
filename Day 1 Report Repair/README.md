@@ -27,8 +27,10 @@ for high in high_to_low:
 
 Output :
 
-`Ketemu 2020 = 1228 + 792
-Hasil perkalian = 972576`
+```
+Ketemu 2020 = 1228 + 792
+Hasil perkalian = 972576
+```
 
 ### Part 2
 
@@ -63,8 +65,10 @@ for high in high_to_low:
 
 Output :
 
-`Ketemu! 1894 + 17 + 109 = 2020. Hasil kali = 3509582
+```
+Ketemu! 1894 + 17 + 109 = 2020. Hasil kali = 3509582
 Ketemu! 1829 + 82 + 109 = 2020. Hasil kali = 16347602
 Ketemu! 1643 + 109 + 268 = 2020. Hasil kali = 47995316
 Ketemu! 1119 + 109 + 792 = 2020. Hasil kali = 96601032
-Ketemu! 1030 + 268 + 722 = 2020. Hasil kali = 199300880`
+Ketemu! 1030 + 268 + 722 = 2020. Hasil kali = 199300880
+```
