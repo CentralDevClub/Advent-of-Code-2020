@@ -1,10 +1,7 @@
 # Loading Data
 with open('./input.txt') as file:
     array = file.readlines()
-
 array = list(map(lambda x: x[:-1] if x[-1:] == '\n' else x, array))
-
-# array = ['1-3 a: abcde', '1-3 b: cdefg', '2-9 c: ccccccccc']
 
 
 def process(arr):
@@ -18,11 +15,8 @@ def process(arr):
 
 
 array = process(array)
-
-
 valid_password = 0
 for i in array:
-    print(i)
     if (i['password'][i['first']-1] == i['value']) ^ (i['password'][i['second']-1] == i['value']):
         valid_password += 1
 
