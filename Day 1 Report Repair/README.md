@@ -1,4 +1,4 @@
-## Penyelesaian
+## :thinking: Penyelesaian
 ### Part 1
 
 Pertama loading file txt menjadi array, kemudian dilakukan copy array sehingga memiliki dua array. Array pertama dilakukan sorting asceding sedangkan array kedua dilakukan sorting descending. Setelah itu dilakukan nested looping terhadap array descending, didalamnya terdapat looping array ascending.
@@ -9,18 +9,21 @@ Tujuan dari sorting array dan melakukan break jika angka lebih dari 2020 adalah 
 # Loading Data
 with open('./input.txt') as file:
 	array = file.readlines()
+array = list(map(lambda x: int(x[:-1]) if x[-1:] == '\n' else int(x), array))
 
-array = list(map(lambda x : int(x[:-1]),array))
 high_to_low = array.copy()
 high_to_low.sort(reverse=True)
 low_to_high = sorted(array)
 
 # Puzzle solving
+solved = []
 for high in high_to_low:
 	for low in low_to_high:
 		if high + low == 2020:
-			print(f'Ketemu {high+low} = {high} + {low}')
-			print(f'Hasil perkalian = {high*low}')
+			if high*low not in solved:
+				solved.append(high*low)
+				print(f'Ketemu {high+low} = {high} + {low}')
+				print(f'Hasil perkalian = {high*low}')
 		elif high + low > 2020:
 			break
 ```
@@ -42,8 +45,8 @@ Pada looping tingkat ketiga yaitu looping terhadap array ascending, diakukan pen
 # Loading Data
 with open('./input.txt') as file:
 	array = file.readlines()
+array = list(map(lambda x: int(x[:-1]) if x[-1:] == '\n' else int(x), array))
 
-array = list(map(lambda x : int(x[:-1]),array))
 high_to_low = array.copy()
 high_to_low.sort(reverse=True)
 low_to_high = sorted(array)
@@ -66,9 +69,5 @@ for high in high_to_low:
 Output :
 
 ```
-Ketemu! 1894 + 17 + 109 = 2020. Hasil kali = 3509582
-Ketemu! 1829 + 82 + 109 = 2020. Hasil kali = 16347602
-Ketemu! 1643 + 109 + 268 = 2020. Hasil kali = 47995316
-Ketemu! 1119 + 109 + 792 = 2020. Hasil kali = 96601032
 Ketemu! 1030 + 268 + 722 = 2020. Hasil kali = 199300880
 ```

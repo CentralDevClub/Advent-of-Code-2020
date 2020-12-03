@@ -1,8 +1,8 @@
 # Loading Data
 with open('./input.txt') as file:
 	array = file.readlines()
+array = list(map(lambda x: int(x[:-1]) if x[-1:] == '\n' else int(x), array))
 
-array = list(map(lambda x : int(x[:-1]),array))
 high_to_low = array.copy()
 high_to_low.sort(reverse=True)
 low_to_high = sorted(array)
