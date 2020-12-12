@@ -12,22 +12,20 @@ print(jolts[1]*jolts[3])
 
 # Part 2
 adapter = adapter + [adapter[-1]+3]
-total_combination = 1
+DP = {}
 
 
-def reduce(combination):
-    global total_combination
-    for i in range(1, len(combination)-1):
-        reduced = combination.copy()
-        diff_back = combination[i] - combination[i-1]
-        diff_front = combination[i+1] - combination[i]
-        if diff_back == 1 and diff_front == 1:
-            reduced.remove(combination[i])
-            total_combination += 1
-            # print(total_combination)
-            reduce(reduced)
+def dp(i):
+    if i == len(adapter)-1:
+        return 1
+    if i in DP:
+        return DP[i]
+    ans = 0
+    for j in range(i+1, len(adapter)):
+        if adapter[j] - adapter[i] <= 3:
+            ans += dp(j)
+    DP[i] = ans
+    return ans
 
 
-# print(adapter)
-reduce(adapter)
-print(total_combination)
+print(dp(0))
