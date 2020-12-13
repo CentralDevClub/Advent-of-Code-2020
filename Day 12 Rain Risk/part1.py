@@ -8,8 +8,10 @@ class Ship:
 		self.facing = facing
 		self.coor = [0,0]
 
-	def show_pos(self):
+	def show_pos(self,manhattan=False):
 		print(f'Ship Coordinates : {self.coor}, Facing : {self.facing}')
+		if manhattan:
+			print(f'Manhattan Disctance of Ship : {abs(self.coor[0])+abs(self.coor[1])}')
 		return self
 
 	def rotate(self, direction, degree):
@@ -39,13 +41,11 @@ class Ship:
 		elif command == 'F':
 			self.move(distance=scale)
 			
-			
+
+# Part 1			
 ship = Ship('E')
 ship.show_pos()
 
 for command in commands:
 	ship.go(command[0],command[1])
-ship.show_pos()
-
-x, y = ship.coor
-print(f'Manhattan Disctance of Ship : {abs(x)+abs(y)}')
+ship.show_pos(True)
