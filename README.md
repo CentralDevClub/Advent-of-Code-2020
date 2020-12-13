@@ -1,4 +1,10 @@
 # :sparkles: :christmas_tree: Advent of Code 2020 :bell: :sparkles:
+![GitHub top language](https://img.shields.io/github/languages/top/CentralDevClub/Advent-of-Code-2020?style=flat-square)
+![GitHub language count](https://img.shields.io/github/languages/count/CentralDevClub/Advent-of-Code-2020?style=flat-square)
+![GitHub code size](https://img.shields.io/github/languages/code-size/CentralDevClub/Advent-of-Code-2020?style=flat-square)
+![GitHub repo size](https://img.shields.io/github/repo-size/CentralDevClub/Advent-of-Code-2020?style=flat-square)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/CentralDevClub/Advent-of-Code-2020?style=flat-square)
+![GitHub](https://img.shields.io/github/license/CentralDevClub/Advent-of-Code-2020?style=flat-square)
 > Advent of Code 2020 yang berlangsung selama 25 hari
 
 Advent of Code adalah kalender teka-teki pemrograman kecil Advent untuk berbagai set keahlian dan tingkat keahlian yang dapat dipecahkan dalam bahasa pemrograman apa pun yang Anda suka. Orang-orang menggunakannya sebagai kontes kecepatan, persiapan wawancara, pelatihan perusahaan, kursus universitas, latihan soal, atau untuk menantang satu sama lain.
